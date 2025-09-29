@@ -344,7 +344,11 @@
 	flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH|PEPPERPROOF
 
 /datum/armor/carp_hood_spaceproof
-	melee = -20
+	melee = 20
+	bullet = 30
+	laser = 30
+	energy = 40
+	bomb = 30
 	bio = 100
 	fire = 60
 	acid = 75
@@ -356,7 +360,32 @@
 /obj/item/clothing/suit/hooded/carp_costume/spaceproof/old
 	name = "battered carp space suit"
 	desc = "It's covered in bite marks and scratches, yet seems to be still perfectly functional."
+	armor_type = /datum/armor/carp_costume_spaceproof_old
 	slowdown = 1
+	hoodtype = /obj/item/clothing/head/hooded/carp_hood/spaceproof/old
+
+/datum/armor/carp_costume_spaceproof_old
+	melee = -20
+	bullet = 0
+	laser = 0
+	energy = 0
+	bomb = 0
+	bio = 100
+	fire = 60
+	acid = 75
+
+/obj/item/clothing/head/hooded/carp_hood/spaceproof/old
+	armor_type = /datum/armor/carp_hood_spaceproof_old
+	
+/datum/armor/carp_hood_spaceproof_old
+	melee = -20
+	bullet = 0
+	laser = 0
+	energy = 0
+	bomb = 0
+	bio = 100
+	fire = 60
+	acid = 75
 
 /obj/item/clothing/suit/hooded/ian_costume //It's Ian, rub his bell- oh god what happened to his inside parts?
 	name = "corgi costume"
