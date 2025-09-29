@@ -237,8 +237,12 @@
 			new /obj/item/storage/bag/harpoon_quiver(src)
 			new /obj/item/clothing/suit/hooded/carp_costume/spaceproof(src)
 			new /obj/item/clothing/mask/gas/carp(src)
+			new /obj/item/grenade/spawnergrenade/spesscarp(src) // 5 tc, it spawns 5 carps
+			new /obj/item/grenade/spawnergrenade/spesscarp(src)
 			new /obj/item/grenade/spawnergrenade/spesscarp(src)
 			new /obj/item/toy/plush/carpplushie/dehy_carp(src) // 1 tc, for use as a personal mount
+			new /obj/item/toy/plush/carpplushie/dehy_carp(src)
+			new /obj/item/toy/plush/carpplushie/dehy_carp(src)
 
 		if(KIT_MAD_SCIENTIST)
 			new /obj/item/clothing/suit/toggle/labcoat/mad(src) // 0 tc
