@@ -319,7 +319,11 @@
 	resistance_flags = NONE
 
 /datum/armor/carp_costume_spaceproof
-	melee = -20
+	melee = 20
+	bullet = 30
+	laser = 30
+	energy = 40
+	bomb = 30
 	bio = 100
 	fire = 60
 	acid = 75
