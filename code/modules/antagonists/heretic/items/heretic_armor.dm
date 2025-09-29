@@ -169,6 +169,11 @@
 		loc.balloon_alert(loc, "cloak hidden")
 		loc.visible_message(span_notice("Light shifts around [loc], making the cloak around them invisible!"))
 
+/// No keeping pressure resist by taking the cloak off.
+/obj/item/clothing/suit/hooded/cultrobes/void/dropped(mob/user)
+	. = ..()
+	REMOVE_TRAIT(user, TRAIT_RESISTLOWPRESSURE, REF(src))
+
 /// Makes our cloak "visible" again.
 /obj/item/clothing/suit/hooded/cultrobes/void/proc/make_visible()
 	remove_traits(list(TRAIT_NO_STRIP, TRAIT_EXAMINE_SKIP), REF(src))
